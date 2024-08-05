@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>EncryptEase</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="#encryptEase">EncryptEase</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="input-container">
+            <textarea id="input-text" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="note">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+            <div class="buttons">
+                <button id="encrypt-button">Encriptar</button>
+                <button id="decrypt-button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-container">
+            <img src="img/Muñeco.png" alt="">
+            <p id="output-message">Ningún mensaje fue encontrado</p>
+            <p class="hint">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
