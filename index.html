@@ -14,20 +14,25 @@
     </header>
     <div class="container">
         <div class="input-container">
-            <textarea id="input-text" placeholder="Ingrese el texto aqui"></textarea>
-            <p class="note">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+            <textarea id="input-text" placeholder="Ingrese el texto aqui" ></textarea>
+            <p class="note" src="img/exclamacion.png">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
             <div class="buttons">
-                <button id="encrypt-button">Encriptar</button>
-                <button id="decrypt-button">Desencriptar</button>
+                <button class="button-principal" onclick="encriptar()">Encriptar</button>
+                <button class="button-principal " onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         <div class="output-container">
             <img src="img/Muñeco.png" alt="">
+            <textarea id="output-text" placeholder="" readonly></textarea>
             <p id="output-message">Ningún mensaje fue encontrado</p>
-            <p class="hint">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p class="hint" id="output-hint">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="button-copiar" onclick="copiarTexto()">
+                <img src="img/iconocopiar.png" alt="">
+            </button>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
 </html>
+
